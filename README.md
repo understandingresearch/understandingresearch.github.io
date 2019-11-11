@@ -1,1 +1,0 @@
-# understandingresearch.github.io
