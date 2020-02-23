@@ -13,6 +13,8 @@
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="css/cookiecuttr.css" rel="stylesheet">
+    
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -22,7 +24,19 @@
         <script src="js/jquery-1.10.2.min.js" defer></script>
         <script src="js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script>hljs.initHighlightingOnLoad();</script>
+	<script src="./js/jquery.cookie.js" defer></script>
+    <script src="./js/jquery.cookiecuttr.js" defer></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-158939469-1', 'understandingresearch.github.io');
+            ga('send', 'pageview');
+        </script> 
     </head>
 
     <body class="homepage">
@@ -111,6 +125,7 @@
             <li><a href="#about-us">About us</a></li>
             <li><a href="#references">References</a></li>
             <li><a href="#copyrights-and-usage">Copyrights and usage</a></li>
+            <li><a href="#privacy-policy">Privacy policy</a></li>
             <li><a href="#sponsors">Sponsors</a></li>
     </ul>
 </div></div>
@@ -157,6 +172,15 @@
 <p>This knowledge product entitled <strong>Understanding Research</strong> is protected by copyright and belongs to the authors.</p>
 <p>This knowledge product is available for use under <strong><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Public License Attribution-NonCommercial-ShareAlike 4.0 International</a></strong>.</p>
 <p>If you are planning to use any material from Understanding Research, please let us know who you are and how you plan to use it. This information is very important to us for evaluating its use and impact. You can write to us at <strong>supportunit [dot] fammed [at] mcgill [dot] ca</strong>.​</p>
+<h2 id="privacy-policy">Privacy policy</h2>
+<p>Please note that this website, like many others, uses Google Analytics to track user behaviour on <strong>understandingresearch.github.io</strong> and <strong>comprendrelarecherche.github.io</strong></p>
+<p>If you have questions about your privacy, please contact us at <strong>supportunit [dot] famed [at] mcgill [dot] ca</strong></p>
+<h4 id="about-google-analytics">About Google Analytics</h4>
+<p>Google Analytics is a web and traffic analytics tool provided by Google. Google collects, organizes, and provides visualizations of anonymized data gathered during a user’s browsing session. Data may include navigation patterns (including links clicked and pages visited), region of origin (based on IP), traffic source (ex. referrals), language preference, browser type, and screen size.</p>
+<p>Google may use this data to contextualize and personalize the ads of its own advertising network.</p>
+<p><strong>Personal data collected:</strong> Cookie and usage data</p>
+<p><strong>Place of processing:</strong> USA</p>
+<p>For more information, please see <a href="https://policies.google.com/privacy?hl=en" target="_blank">Google's privacy policy</a>.</p>
 <h2 id="sponsors">Sponsors</h2>
 <p>This initiative is sponsored by the <a href="http://unitesoutiensrapqc.ca/composante/developpements-methodologiques/" target="_blank"> Quebec SPOR SUPPORT Unit, Method Development component</a>; the <a href="https://ceppp.ca/en/" target="_blank">Centre of Excellence on Partnership with Patients and the Public (CEPPP)</a>; the <a href="http://unitesoutiensrapqc.ca/composante/strategie-de-recherche/" target="_blank">Patient and Public Partnership Strategy for the Quebec SPOR SUPPORT Unit</a>, and the <a href="https://www.mcgill.ca/familymed/" target="_blank">McGill Department of Family Medicine</a>.</p>
 <p><img src="img/Logo-Unite-de-SOUTIEN-SRAP-Quebec-COULEUR.jpg" alt="logo of Unite de Soutien SRAP Quebec" height="75" />
@@ -168,12 +192,15 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
+	
         <script>
             var base_url = ".",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="js/base.js" defer></script>
         <script src="search/main.js" defer></script>
+	<script src="./js/cookie_notice_for_gdpr.js" defer></script>
+
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
@@ -244,5 +271,5 @@
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2020-02-10 18:27:59
+Build Date UTC : 2020-02-23 23:22:50
 -->
