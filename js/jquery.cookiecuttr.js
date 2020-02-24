@@ -26,19 +26,19 @@
         var defaults = {
             cookieCutter: false, // you'd like to enable the div/section/span etc. hide feature? change this to true
             cookieCutterDeclineOnly: false, // you'd like the CookieCutter to only hide when someone has clicked declined set this to true
-            cookieAnalytics: true, // just using a simple analytics package? change this to true
-            cookieDeclineButton: true, // this will disable non essential cookies
+            cookieAnalytics: true, // just using a simple analytics package? change this to true // RM: we are setting this to true but just editing the message displayed
+            cookieDeclineButton: false, // this will disable non essential cookies
             cookieAcceptButton: true, // this will disable non essential cookies
             cookieResetButton: false,
             cookieOverlayEnabled: false, // don't want a discreet toolbar? Fine, set this to true
             cookiePolicyLink: 'https://understandingresearch.github.io/#privacy-policy', // if applicable, enter the link to your privacy policy here...
             cookieMessage: 'We use cookies on this website, you can <a href="https://understandingresearch.github.io/#privacy-policy" title="read about our cookies">read about them here</a>. To use the website as intended please...',
-            cookieAnalyticsMessage: 'We use cookies to learn about how our readers arrived at our site, which pages they visit, and to analyze our traffic patterns. We use this information to improve our content. <a href="https://understandingresearch.github.io/#privacy-policy">Read our privacy policy</a>.',
-            cookieErrorMessage: "We\'re sorry, this feature places cookies in your browser and has been disabled. <br>To continue using this functionality, please",
+            cookieAnalyticsMessage: 'We use cookies to analyze our traffic patterns and improve our content. By continuing to use this site you are agreeing to our use of cookies. <a href="https://understandingresearch.github.io/#privacy-policy">Read our privacy policy</a>.',
+            cookieErrorMessage: "We're sorry, this feature places cookies in your browser and has been disabled. <br>To continue using this functionality, please",
             cookieWhatAreTheyLink: "http://www.allaboutcookies.org/",
             cookieDisable: '',
             cookieExpires: 365,
-            cookieAcceptButtonText: "ACCEPT COOKIES",
+            cookieAcceptButtonText: "CONTINUE",
             cookieDeclineButtonText: "DECLINE COOKIES",
             cookieResetButtonText: "RESET COOKIES FOR THIS WEBSITE",
             cookieWhatAreLinkText: "What are cookies?",
@@ -179,9 +179,9 @@
                 }
             } else if (cookieAnalytics) { // show analytics overlay
                 if (appOrPre) {
-                    $('body').append('<div class="cc-cookies ' + cookieOverlay + '">' + cookieAnalyticsMessage + cookieAccept + cookieDecline + '<a href="' + cookieWhatAreTheyLink + '" title="Visit All about cookies (External link)">' + cookieWhatAreLinkText + '</a></div>');
+                    $('body').append('<div class="cc-cookies ' + cookieOverlay + '">' + cookieAnalyticsMessage + cookieAccept + cookieDecline + '<a href="' + cookieWhatAreTheyLink + '" title="Visit All about cookies (External link)" target="blank">' + cookieWhatAreLinkText + '</a></div>');
                 } else {
-                    $('body').prepend('<div class="cc-cookies ' + cookieOverlay + '">' + cookieAnalyticsMessage + cookieAccept + cookieDecline + '<a href="' + cookieWhatAreTheyLink + '" title="Visit All about cookies (External link)">' + cookieWhatAreLinkText + '</a></div>');
+                    $('body').prepend('<div class="cc-cookies ' + cookieOverlay + '">' + cookieAnalyticsMessage + cookieAccept + cookieDecline + '<a href="' + cookieWhatAreTheyLink + '" title="Visit All about cookies (External link)" target="blank">' + cookieWhatAreLinkText + '</a></div>');
                 }
             }
             if (cookiePolicyPage) { // show policy page overlay

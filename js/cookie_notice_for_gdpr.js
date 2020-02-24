@@ -1,12 +1,10 @@
 $(document).ready(function () {
   $.cookieCuttr();
   
-  if ($.cookie('cc_cookie_decline') == "cc_cookie_decline") {
-    // do nothing
-  } else {
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-158939469-1']);
-    _gaq.push(['_trackPageview']);
+  if (jQuery.cookie('cc_cookie_accept') == "cc_cookie_accept") {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-158939469-1']);
+  _gaq.push(['_trackPageview']);
 
 (function() {
 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
