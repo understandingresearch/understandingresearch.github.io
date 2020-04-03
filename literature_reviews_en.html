@@ -9,20 +9,15 @@
         
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>Literature Reviews - Understanding Research</title>
-        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <link href="css/cookiecuttr.css" rel="stylesheet">
     
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
 
         <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
 	<script src="./js/jquery.cookie.js" defer></script>
@@ -40,71 +35,63 @@
     </head>
 
     <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">Understanding Research</a>
-                </div>
+                <a class="navbar-brand" href=".">Understanding Research</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li >
-                                <a href="index.html">Home</a>
+                            <li class="navitem">
+                                <a href="index.html" class="nav-link">Home</a>
                             </li>
-                            <li >
-                                <a href="research_en.html">Research</a>
+                            <li class="navitem">
+                                <a href="research_en.html" class="nav-link">Research</a>
                             </li>
-                            <li class="active">
-                                <a href="literature_reviews_en.html">Literature Reviews</a>
+                            <li class="navitem active">
+                                <a href="literature_reviews_en.html" class="nav-link">Literature Reviews</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Methodology <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Methodology <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="methodology_en.html">Methodology Overview</a>
+<li>
+    <a href="methodology_en.html" class="dropdown-item">Methodology Overview</a>
 </li>
                                     
-<li >
-    <a href="methodology/quantitative_research_en.html">Quantitative Research</a>
+<li>
+    <a href="methodology/quantitative_research_en.html" class="dropdown-item">Quantitative Research</a>
 </li>
                                     
-<li >
-    <a href="methodology/qualitative_research_en.html">Qualitative Research</a>
+<li>
+    <a href="methodology/qualitative_research_en.html" class="dropdown-item">Qualitative Research</a>
 </li>
                                     
-<li >
-    <a href="methodology/mixed_methods_research_en.html">Mixed Methods Research</a>
+<li>
+    <a href="methodology/mixed_methods_research_en.html" class="dropdown-item">Mixed Methods Research</a>
 </li>
                                     
-<li >
-    <a href="methodology/participatory_research_en.html">Participatory Research</a>
+<li>
+    <a href="methodology/participatory_research_en.html" class="dropdown-item">Participatory Research</a>
 </li>
                                 </ul>
                             </li>
-                            <li >
-                                <a href="knowledge_translation_en.html">Knowledge Translation</a>
+                            <li class="navitem">
+                                <a href="knowledge_translation_en.html" class="nav-link">Knowledge Translation</a>
                             </li>
-                            <li >
-                                <a href="http://comprendrelarecherche.github.io/">Français</a>
+                            <li class="navitem">
+                                <a href="http://comprendrelarecherche.github.io/" class="nav-link">Français</a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -115,24 +102,60 @@
         </div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#literature-reviews">Literature reviews</a></li>
-            <li><a href="#purpose-of-literature-reviews">Purpose of literature reviews</a></li>
-            <li><a href="#main-types-of-literature-reviews">Main types of literature reviews</a></li>
-            <li><a href="#systematic-review">Systematic review</a></li>
-            <li><a href="#other-types-of-reviews">Other types of reviews</a></li>
-        <li class="main "><a href="#how-to-read-a-research-article">How to read a research article</a></li>
-            <li><a href="#components-of-a-research-article">Components of a research article</a></li>
-            <li><a href="#additional-resources">Additional resources</a></li>
-    </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
 
-<h2 id="literature-reviews">Literature reviews</h2>
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#literature-reviews" class="nav-link">Literature reviews</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#purpose-of-literature-reviews" class="nav-link">Purpose of literature reviews</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#main-types-of-literature-reviews" class="nav-link">Main types of literature reviews</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#systematic-review" class="nav-link">Systematic review</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#other-types-of-reviews" class="nav-link">Other types of reviews</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#how-to-read-a-research-article" class="nav-link">How to read a research article</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#components-of-a-research-article" class="nav-link">Components of a research article</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#additional-resources" class="nav-link">Additional resources</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="literature-reviews">Literature reviews</h1>
 <p>Research is based on existing knowledge and is expected to fill knowledge gaps. Therefore, any research project begins with (is based on) a <strong>literature review</strong>. A literature review aims to summarize, combine, analyze, comment or critique existing publications on a given topic. 
 Nowadays, literature reviews represent a large portion of the scientific literature published and consulted by the scientific and non-scientific community. Also, systematic reviews are used to enable decision-making based on the best available evidence. </p>
-<h3 id="purpose-of-literature-reviews">Purpose of literature reviews</h3>
+<h2 id="purpose-of-literature-reviews">Purpose of literature reviews</h2>
 <ul>
 <li>​Draw a portrait of a given topic</li>
 <li>Identify questions or aspects of the topic that require more research​ (knowledge gaps)</li>
@@ -140,7 +163,7 @@ Nowadays, literature reviews represent a large portion of the scientific literat
 <li>Justify the relevance of a project and the research methodology employed</li>
 <li>Keep up to date on a given topic</li>
 </ul>
-<h3 id="main-types-of-literature-reviews">Main types of literature reviews</h3>
+<h2 id="main-types-of-literature-reviews">Main types of literature reviews</h2>
 <p>There are several types of literature reviews. The two main types are traditional and systematic.</p>
 <table>
 <thead>
@@ -171,7 +194,7 @@ Nowadays, literature reviews represent a large portion of the scientific literat
 <p>Traditionally, the methods used to conduct literature reviews were not always very explicit. Such reviews were criticized for their lack of objectivity and scientific rigour. For example, only a few studies on a given topic are identified, the selection of studies seems arbitrary (without clear selection criteria), and the analysis of studies is influenced by the researcher's preconceptions. </p>
 <p>To increase scientific rigour, researchers have been interested in developing methods to make the review process more rigorous. In the "traditional" review there is generally no method described and therefore, it cannot be reproduced. Various terms are used to describe this type of review, for example, simply "literature review" or "critical review". </p>
 <p>At the other extreme, there is systematic review, which is one of the most rigorous types of review. Here, the method is clear and various strategies are used to increase scientific rigour. </p>
-<h3 id="systematic-review">Systematic review</h3>
+<h2 id="systematic-review">Systematic review</h2>
 <p>A <strong>systematic review</strong> is a type of literature review that uses explicit and systematic methods to identify, select, evaluate and analyze studies in order to answer a specific review question.​ For example, researchers will search different databases and other sources to ensure that they find all the relevant studies. Also, there will be very clear selection criteria and two people (independent reviewers) will be involved in all stages of the review to avoid possible selection bias. </p>
 <p>Characteristics of a systematic review:</p>
 <ul>
@@ -180,7 +203,7 @@ Nowadays, literature reviews represent a large portion of the scientific literat
 <li>explicit</li>
 <li>comprehensive</li>
 </ul>
-<h3 id="other-types-of-reviews">Other types of reviews</h3>
+<h2 id="other-types-of-reviews">Other types of reviews</h2>
 <table>
 <thead>
 <tr>
@@ -204,7 +227,7 @@ Nowadays, literature reviews represent a large portion of the scientific literat
 </tbody>
 </table>
 <p><strong>Thank you for helping us improve this section by completing <a href="https://forms.gle/zCwtfp9WhaQqbiEM6" target="_blank">a short survey</a>.</strong></p>
-<h2 id="how-to-read-a-research-article">How to read a research article</h2>
+<h1 id="how-to-read-a-research-article">How to read a research article</h1>
 <p>The volume of research articles is ever-growing and can be overwhelming. They can be organized in three big groups:</p>
 <ul>
 <li>Primary research: original studies</li>
@@ -244,7 +267,7 @@ Nowadays, literature reviews represent a large portion of the scientific literat
 </tr>
 </tbody>
 </table>
-<h3 id="components-of-a-research-article">Components of a research article</h3>
+<h2 id="components-of-a-research-article">Components of a research article</h2>
 <p>In the following table, each component of an article is explained:</p>
 <table>
 <thead>
@@ -310,7 +333,7 @@ Nowadays, literature reviews represent a large portion of the scientific literat
 </table>
 <p>Reading an article may take a very long time at first and require reading it many times. As you read, take notes and read critically – do not assume the authors are always correct. Finally, there are different approaches to reading research articles. Some say do not read the abstract; others say to read the title, abstract, and conclusions first. Try different approaches and see what works for you.</p>
 <p><strong>Thank you for helping us improve this section by completing <a href="https://forms.gle/tZA5BaCaRjjUhoFR9" target="_blank">a short survey</a>.</strong></p>
-<h3 id="additional-resources">Additional resources</h3>
+<h2 id="additional-resources">Additional resources</h2>
 <ul>
 <li>
 <p><strong><a href="https://www.youtube.com/watch?v=egJlW4vkb1Y" target="_blank">What are systematic reviews?</a></strong>: a video from Cochrane explaining why systematic reviews are important and how they are done. </p>
@@ -322,6 +345,7 @@ Nowadays, literature reviews represent a large portion of the scientific literat
 <p><strong><a href="https://www.elsevier.com/connect/infographic-how-to-read-a-scientific-paper" target="_blank">How to read a scientific paper</a></strong>: an infographic </p>
 </li>
 </ul></div>
+            </div>
         </div>
 
         <footer class="col-md-12">
@@ -339,19 +363,19 @@ Nowadays, literature reviews represent a large portion of the scientific literat
 	<script src="./js/cookie_notice_for_gdpr.js" defer></script>
 
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
                 <p>
                     From here you can search these documents. Enter
                     your search terms below.
                 </p>
-                <form role="form">
+                <form>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
@@ -362,12 +386,12 @@ Nowadays, literature reviews represent a large portion of the scientific literat
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">

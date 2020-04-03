@@ -9,20 +9,15 @@
         
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>Methodology Overview - Understanding Research</title>
-        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <link href="css/cookiecuttr.css" rel="stylesheet">
     
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
 
         <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
 	<script src="./js/jquery.cookie.js" defer></script>
@@ -40,71 +35,63 @@
     </head>
 
     <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">Understanding Research</a>
-                </div>
+                <a class="navbar-brand" href=".">Understanding Research</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li >
-                                <a href="index.html">Home</a>
+                            <li class="navitem">
+                                <a href="index.html" class="nav-link">Home</a>
                             </li>
-                            <li >
-                                <a href="research_en.html">Research</a>
+                            <li class="navitem">
+                                <a href="research_en.html" class="nav-link">Research</a>
                             </li>
-                            <li >
-                                <a href="literature_reviews_en.html">Literature Reviews</a>
+                            <li class="navitem">
+                                <a href="literature_reviews_en.html" class="nav-link">Literature Reviews</a>
                             </li>
                             <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Methodology <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Methodology <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li class="active">
-    <a href="methodology_en.html">Methodology Overview</a>
+<li>
+    <a href="methodology_en.html" class="dropdown-item active">Methodology Overview</a>
 </li>
                                     
-<li >
-    <a href="methodology/quantitative_research_en.html">Quantitative Research</a>
+<li>
+    <a href="methodology/quantitative_research_en.html" class="dropdown-item">Quantitative Research</a>
 </li>
                                     
-<li >
-    <a href="methodology/qualitative_research_en.html">Qualitative Research</a>
+<li>
+    <a href="methodology/qualitative_research_en.html" class="dropdown-item">Qualitative Research</a>
 </li>
                                     
-<li >
-    <a href="methodology/mixed_methods_research_en.html">Mixed Methods Research</a>
+<li>
+    <a href="methodology/mixed_methods_research_en.html" class="dropdown-item">Mixed Methods Research</a>
 </li>
                                     
-<li >
-    <a href="methodology/participatory_research_en.html">Participatory Research</a>
+<li>
+    <a href="methodology/participatory_research_en.html" class="dropdown-item">Participatory Research</a>
 </li>
                                 </ul>
                             </li>
-                            <li >
-                                <a href="knowledge_translation_en.html">Knowledge Translation</a>
+                            <li class="navitem">
+                                <a href="knowledge_translation_en.html" class="nav-link">Knowledge Translation</a>
                             </li>
-                            <li >
-                                <a href="http://comprendrelarecherche.github.io/">Français</a>
+                            <li class="navitem">
+                                <a href="http://comprendrelarecherche.github.io/" class="nav-link">Français</a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -115,12 +102,26 @@
         </div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#methodology">Methodology</a></li>
-    </ul>
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#methodology" class="nav-link">Methodology</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
 </div></div>
-                <div class="col-md-9" role="main">
+                    <div class="col-md-9" role="main">
 
 <h1 id="methodology">Methodology</h1>
 <p>There are three general types of research methods (<a href="https://osf.io/4sdtm/" target="_blank" >watch our video</a>):</p>
@@ -133,6 +134,7 @@
 <p><img src="img/attention.png" alt="icon of an exclamation point" width="5%" /> To learn more, check out our <a href="https://osf.io/6r8wc/" target="_blank">glossary of research terms</a> (downloadable PDF).</p>
 <p><img src="img/research_methods.png" alt="Diagram of research method types: Qualitative, quantitative, and mixed methods" width="75%" /></p>
 <p><em>Above: Diagram of research method types</em></p></div>
+            </div>
         </div>
 
         <footer class="col-md-12">
@@ -150,19 +152,19 @@
 	<script src="./js/cookie_notice_for_gdpr.js" defer></script>
 
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
                 <p>
                     From here you can search these documents. Enter
                     your search terms below.
                 </p>
-                <form role="form">
+                <form>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
@@ -173,12 +175,12 @@
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">
